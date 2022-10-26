@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MyCAB : Sign In</title>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" type="text/css">
+    </head>
+    <body style="background-color: rgba(198, 198, 198, 0.411) ;">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><img src="taxi.png" style="width:60px;height:42px;"></a></li>
+                    <li><a href="index.html">My<button class="btn btn-secondary btn-sm">CAB</button></a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Content</a></li>
+                </ul>
+            </nav>
+        </header>
+        <br><br>
+        <center><h1 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ; color:rgb(10, 110, 216); font-size: 28pt;">SIGN UP</h1></center><br><br>
+        <form action="profile.html" method="get" name="myForm">
+            <table align="center" cellspacing="10">
+                <tr>
+                    <td><label for="fname"><b>First name :</b></label></td>
+                    <td><input type="text" id="fname" name="fname" placeholder="Your first name"></td>  
+                </tr>                
+                <tr>
+                    <td><label for="lname"><b>Last name :</b></label></td>
+                    <td><input type="text" id="lname" name="lname" placeholder="Your last name"></td>
+                </tr>
+                <tr>
+                    <td><label for="address"><b>Address :</b></label></td>
+                    <td><textarea id="address" placeholder="Address" rows="6" cols="20"></textarea></td>
+                </tr> 
+                <tr>
+                    <td><label for="dob"><b>Date of Birth :</b></label></td>
+                    <td><input type="date" id="dob" name="dob"  ></td>
+                </tr>
+                <tr>
+                    <td><label for="gender"><b>Gender :</b></label></td>
+                    <td>
+                        <input type="radio" id="male" name="gender" value="1"><b>Male</b>
+                        <input type="radio" id="female" name="gender" value="2"><b>Female</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="mobile"><b>Mobile :</b></label></td>
+                    <td><input type="text" id="mobile" name="mobile"></td>
+                </tr>
+                <tr>
+                    <td><label for="mail"><b>Email :</b></label></td>
+                    <td><input type="text" id="mail" name="mail"></td>
+                </tr>
+                <tr>
+                    <td><label for="username"><b>Username :</b></label></td>
+                    <td><input type="text" id="username" name="username"></td>
+                </tr>
+                <tr>
+                    <td><label for="pass"><b>Password :</b></label></td>
+                    <td><input type="password" id="pass" name="password"></td>
+                </tr>
+                <tr>
+                    <td><label for="contact"><b>Can we contact you? :</b></label></td>
+                    <td>
+                        <input type="radio" id="yes" name="contact" value="1"><b>Yes</b>
+                        <input type="radio" id="no" name="contact" value="2"><b>No</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="contact"><b>Communication Preference :</b></label></td>
+                    <td>
+                        <input type="checkbox" id="yes" name="contact" value="1"><b>Email</b>
+                        <input type="checkbox" id="no" name="contact" value="2"><b>SMS</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="checkbox" ><b>I agree to the <a href="">terms and conditions</a>of the website.</b></td>
+                </tr>
+                <tr><td><br><br></td></tr>
+                <tr align="center">
+                    <td><input type="submit"  value="Submit" onclick="javascript:savedata()" style=" font-size: 14pt; background-color:cornflowerblue; height: 1cm; width: 3cm; border-radius: 20px;border-color: cornflowerblue;"></td>
+                    <td><input type="reset" value="Reset" style=" font-size: 14pt; background-color:cornflowerblue; height: 1cm; width: 3cm; border-radius: 20px;border-color: cornflowerblue;"></td>
+                </tr>               
+            </table>            
+        </form>
+        <br><br>
+    </body>
+</html>

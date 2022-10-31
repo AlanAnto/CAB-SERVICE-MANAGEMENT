@@ -19,42 +19,45 @@
         </header>
 
         <br><br>
-        <div class="signin">
-            <form class="form-horizontal" role="form">
-                <div class="form-group">
+        <main>
+            <div class="signin">
+                <form class="form-horizontal" role="form" method="post" id="signinForm" onsubmit="validate(event);">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <label for="inputEmail1">EMAIL : </label>
+                            </div>
+                            <div class="col-md-5">
+                                <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp" placeholder="Enter email" minlength="10" maxlength="40" required >
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <label for="inputPassword1">PASSWORD : </label>
+                            </div>
+                            <div class="col-md-5">
+                                <input type="password" class="form-control" id="inputPassword1" placeholder="Password" minlength="8" maxlength="25"  pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" required>
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+                    
                     <div class="row">
-                        <div class="col-md-2">
-                            <label for="InputEmail1">Email address : </label>
+                        <div class="col-md-1"></div>
+                        <div class="col-md-3">
+                            <button type="submit" class="btn btn-outline-success" id="btn-login">Submit</button>
                         </div>
-                        <div class="col-md-5">
-                            <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <div class="col-md-3">
+                            <button type="reset" class="btn btn-outline-danger">Reset </button>
                         </div>
+                        <div class="col-md-4"></div>
                     </div>
-                </div>
-                <br>
-                <div class="form-group">
-                    <div class="row">
-                        <div class="col-md-2">
-                            <label for="InputPassword1">Password : </label>
-                        </div>
-                        <div class="col-md-5">
-                            <input type="password" class="form-control" id="InputPassword1" placeholder="Password">
-                        </div>
-                    </div>
-                </div>
-                <br><br>
-                
-                <div class="row">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-3">
-                        <button type="submit" class="btn btn-outline-success">Submit</button>
-                    </div>
-                    <div class="col-md-3">
-                        <button type="reset" class="btn btn-outline-danger">Reset </button>
-                    </div>
-                    <div class="col-md-4"></div>
-                </div>
-              </form>
-        </div>
+                  </form>
+            </div>
+        </main> 
+        <script src="scripts\signin.js"></script>
     </body>
 </html>

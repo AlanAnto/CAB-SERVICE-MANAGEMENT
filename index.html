@@ -20,7 +20,7 @@
 
         <div class="img1">
             <div class="search">
-                <form class="form-horizontal" role="form">
+                <form class="form-horizontal" role="form" id="searchForm" method="post" onsubmit="validate(event)">
                     <div class="form-group">
                         <div class="row">
                             <div class="col">
@@ -40,7 +40,7 @@
 
                         <div class="row">
                             <div class="col">
-                                <button type="submit" class="btn btn-primary btn-lg btn-xl">Search</button>
+                                <button type="submit" class="btn btn-primary btn-lg btn-xl" id="search">Search</button>
                             </div>
                         </div>
                     </div>
@@ -83,5 +83,6 @@
                     <a href="signup.html"> <button type="button" class="btn btn-outline-light btn-lg ">Sign Up</button></a>           </div>
             </div>
         </div>
+        <script src="scripts\index.js"></script>
     </body>
 </html>
